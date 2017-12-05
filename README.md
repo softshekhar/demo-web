@@ -4,11 +4,13 @@
 
 ## Vue
 
-# Install vue-cli
+``` bash
+# install vue-cli
 npm install -g vue-cli
 
-# Generate project
+# generate project
 vue init webpack PROJECTNAME
+```
 
 ## Build Setup
 
