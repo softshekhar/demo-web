@@ -3,7 +3,7 @@
     <h1>People</h1>
     <div>
       <input v-model="name" type="text">
-      <button v-on:click="submit()">Opprett Person</button>
+      <button v-on:click="submit()">Add Person</button>
     </div>
     <div>
       <ul>
@@ -28,7 +28,7 @@
       submit () {
         console.log('created: ' + this.name)
         const person = {name: this.name}
-        axios.post('http://localhost:8081/addperson2', person).then(resp => {
+        axios.post('http://localhost:8081/addperson', person).then(resp => {
           console.log('created: ' + JSON.stringify(resp.data))
           this.getPeople()
         })
